@@ -2,61 +2,8 @@
 #import "../config/constants.typ": current-date
 #import "../utils/states.typ": thesis-info-state
 
-// #let cover-primary(
-//   title-cn: "",
-//   title-en: "",
-//   author: "",
-//   student-id: "",
-//   supervisor: "",
-//   profession: "",
-//   collage: "",
-//   reply-date: "",
-//   institute: "",
-//   year: current-date.year(),
-//   month: current-date.month(),
-//   day: current-date.day(),
-// ) = {
-//   align(center)[
 
-//     #let space-scale-ratio = 1.25
-
-//     #v(字号.小四 * 6 * space-scale-ratio)
-
-//     #text(size: 字号.小一, font: 字体.宋体, weight: "bold")[*本科毕业论文（设计）*]
-
-//     #v(字号.小四 * 2 * space-scale-ratio)
-
-//     #text(size: 字号.二号, font: 字体.黑体)[#title-cn]
-
-//     #v(字号.小四 * 2 * space-scale-ratio)
-
-//     #par(justify: false)[
-//       #text(size: 字号.小二, font: 字体.宋体, weight: "bold")[#title-en]
-//     ]
-
-//     #v(字号.小四 * 1 * space-scale-ratio)
-//     #v(字号.二号 * 2 * space-scale-ratio)
-
-//     #align(center)[
-//       #text(size: 字号.小二, font: 字体.宋体, weight: "bold")[
-//         #author
-//       ]
-//     ]
-
-//     #v(字号.小二 * 2 * space-scale-ratio)
-//     #v(字号.小四 * 6 * space-scale-ratio)
-
-//     #align(center)[
-//       #text(size: 字号.小二, font: 字体.楷体, weight: "bold")[#institute]
-
-//       #text(size: 字号.小二, font: 字体.宋体, weight: "bold")[
-//         #[#year]年#[#month]月
-//       ]
-//     ]
-//   ]
-// }
-
-#let cover-secondary(
+#let cover-course(
   title-cn: "",
   author: "",
   student-id: "",
@@ -159,7 +106,7 @@
 
     // pagebreak()
 
-    cover-secondary(
+    cover-course(
       title-cn: thesis-info.at("title-cn"),
       author: thesis-info.at("author"),
       student-id: thesis-info.at("student-id"),
