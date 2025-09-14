@@ -1,5 +1,7 @@
 # 哈尔滨工业大学（深圳）typst课程论文模板
 
+自用课程论文模板
+
 <!-- 适用于哈尔滨工业大学学位论文的 Typst 模板
 
 ![hit-thesis-typst-cover](https://vonbrank-images.oss-cn-hangzhou.aliyuncs.com/20240426-HIT-Thesis-Typst/hit-thesis-typst-development-cover-01.jpg)
